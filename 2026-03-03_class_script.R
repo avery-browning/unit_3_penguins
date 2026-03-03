@@ -36,8 +36,8 @@ plot(lm_1)
 
 # come back here - something missing / error
 gentoo = penguins %>%
-  filter(species == "Gentoo") +
-          !is.na(bill_length_mm)
+  filter(species == "Gentoo") %>%
+          (!is.na(bill_length_mm))
 head(gentoo)
 summary(gentoo)
 
